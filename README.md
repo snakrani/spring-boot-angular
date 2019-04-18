@@ -4,6 +4,9 @@ prerequisite
 -Node v10.13.0
 -NPM 6.4.1
 
+clone project by doing following command.
+git clone https://github.com/snakrani/spring-boot-angular.git
+
 Do mvn install to build application
 run [ mvn spring-boot:run ] to start application
 
