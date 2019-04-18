@@ -1,4 +1,4 @@
-package com.test.service;
+package com.companyA.service;
 
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.web.client.RestTemplateBuilder;
@@ -11,7 +11,7 @@ import org.springframework.util.LinkedMultiValueMap;
 import org.springframework.util.MultiValueMap;
 import org.springframework.web.client.RestTemplate;
 
-import com.test.domain.User;
+import com.companyA.domain.User;
 
 /**
  * Calls Third party service to get data.

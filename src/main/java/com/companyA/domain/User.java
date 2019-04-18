@@ -1,4 +1,4 @@
-package com.test.domain;
+package com.companyA.domain;
 
 public class User {
 

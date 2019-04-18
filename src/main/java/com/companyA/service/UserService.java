@@ -1,8 +1,8 @@
-package com.test.service;
+package com.companyA.service;
 
 import org.springframework.http.ResponseEntity;
 
-import com.test.domain.User;
+import com.companyA.domain.User;
 
 public interface UserService {
 	public ResponseEntity<?> createUser(User user);

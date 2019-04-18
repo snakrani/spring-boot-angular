@@ -1,4 +1,4 @@
-package com.test.service;
+package com.companyA.service;
 
 import static org.mockito.Mockito.verify;
 
@@ -12,8 +12,8 @@ import org.springframework.http.HttpEntity;
 import org.springframework.test.util.ReflectionTestUtils;
 import org.springframework.web.client.RestTemplate;
 
-import com.test.domain.User;
-import com.test.service.UserServiceImpl;
+import com.companyA.domain.User;
+import com.companyA.service.UserServiceImpl;
 
 public class UserServiceImplTest {
 	

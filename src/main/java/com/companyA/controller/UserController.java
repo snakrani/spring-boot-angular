@@ -1,4 +1,4 @@
-package com.test.controller;
+package com.companyA.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
@@ -7,8 +7,8 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.test.domain.User;
-import com.test.service.UserService;
+import com.companyA.domain.User;
+import com.companyA.service.UserService;
 
 @RestController
 @RequestMapping("/api/user")

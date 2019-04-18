@@ -1,4 +1,4 @@
-package com.test.controller;
+package com.companyA.controller;
 import static org.mockito.Mockito.verify;
 import org.junit.Before;
 import org.junit.Test;
@@ -7,9 +7,9 @@ import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
 import org.springframework.test.util.ReflectionTestUtils;
 
-import com.test.controller.UserController;
-import com.test.domain.User;
-import com.test.service.UserService;
+import com.companyA.controller.UserController;
+import com.companyA.domain.User;
+import com.companyA.service.UserService;
 
 public class UserControllerTest {
 	
