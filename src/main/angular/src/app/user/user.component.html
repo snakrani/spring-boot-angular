@@ -1,0 +1,58 @@
+<div class="container">
+
+  <p><b>CREATE AN ACCOUNT</b></p> 
+  Please enter the following information to create your account.
+  <b class="red">{{message}}</b>
+
+  <mat-form-field>
+    <input matInput  [(ngModel)]="user.firstName" placeholder="First Name *" 
+    [formControl]="firstNameFormControl" [errorStateMatcher]="matcher">
+    <mat-error *ngIf="firstNameFormControl.hasError('required')">
+      First Name is <strong>required</strong> 
+    </mat-error>
+  </mat-form-field> 
+
+  <mat-form-field>
+    <input matInput [(ngModel)]="user.middleName" placeholder="Middle Name/Initial">
+  </mat-form-field>
+
+  <mat-form-field>
+    <input matInput  [(ngModel)]="user.lastName" placeholder="Last Name *" 
+    [formControl]="lastNameFormControl" [errorStateMatcher]="matcher">
+    <mat-error *ngIf="lastNameFormControl.hasError('required')">
+      Last Name is <strong>required</strong> 
+    </mat-error>
+  </mat-form-field> 
+
+  <mat-form-field>
+    <input matInput placeholder="Email Address *" [(ngModel)]="user.email" 
+    [formControl]="emailFormControl" [errorStateMatcher]="matcher">
+    <mat-error *ngIf="emailFormControl.hasError('email') && !emailFormControl.hasError('required')">
+      Please enter a valid email address
+    </mat-error>
+    <mat-error *ngIf="emailFormControl.hasError('required')">
+      Email is <strong>required</strong> 
+    </mat-error>
+  </mat-form-field> 
+
+  <mat-form-field>
+    <input matInput  [(ngModel)]="user.password" placeholder="Password *" 
+    [formControl]="passwordFormControl" [errorStateMatcher]="matcher">
+    <mat-error *ngIf="passwordFormControl.hasError('required')">
+      Password is <strong>required</strong> 
+    </mat-error>
+  </mat-form-field> 
+  
+  <mat-form-field>
+    <input matInput  [(ngModel)]="user.confirmPassword" placeholder="Confirm Password *" 
+    [formControl]="confirmPasswordFormControl" [errorStateMatcher]="matcher">
+    <mat-error *ngIf="confirmPasswordFormControl.hasError('required')">
+      Confirm Password is <strong>required</strong> 
+    </mat-error>
+  </mat-form-field> 
+
+  <mat-checkbox [(ngModel)]="user.isSubscribed">Sign Up for Newsletter</mat-checkbox>
+
+  <button mat-button color="primary" (click)="registerUser()">Register</button>
+  
+</div>
