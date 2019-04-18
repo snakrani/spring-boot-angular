@@ -7,7 +7,7 @@ prerequisite
 clone project by doing following command.
 git clone https://github.com/snakrani/spring-boot-angular.git
 
-Do mvn install to build application
+Do mvn install to build application \n
 run [ mvn spring-boot:run ] to start application
 
 localhost:8080 will display register user page.
